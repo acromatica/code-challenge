@@ -435,6 +435,10 @@ body {
         padding: 183.3333333333% 0 0;
     }
 
+    .heroSwiper .swiper-slide:first-child::after {
+        background: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0, rgba(255, 255, 255, 0) 47.2727272727%);
+    }
+
     .drag--tooltip {
         display: none;
     }
@@ -523,8 +527,6 @@ body {
 }
 
 @media (min-width: 1200px) {
-
-
     .heroText h1 {
         font-size: 5.7142857143em;
     }
