@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Code Challenge</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+    <symbol id="arrow" viewBox="0 0 24 24">
+        <path d="M15,5l-1.41,1.41L18.17,11H2V13h16.17l-4.59,4.59L15,19l7-7L15,5z"/>
+    </symbol>
+
+    <symbol id="tag" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none"/><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/>
+    </symbol>
+
+</svg>
+
+<div class="hero">
+    <div class="heroText">
+        <h1>the refresh sale</h1>
+        <p class="p--1">15% off sitewide to recharge your living space. Ends Friday, 2/19</p>
+        <p class="p--2">15+ collections, 100+ fabrics, 20+ legs</p>
+        <a href="#" class="button">
+            Start customizing
+            <svg class="arrow--icon">
+                <use xlink:href="#arrow" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="swiper-container heroSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <picture>
+                    <source media="screen and (min-width: 900px)" srcset="img/desk.jpg, img/desk@2x.jpg 2x, img/desk@3x.jpg 3x">
+                    <img src="img/mobile.jpg" srcset="img/mobile@2x.jpg 2x, img/mobile@3x.jpg 3x" alt="Interior Define Living Room Scene" />
+                </picture>
+
+                <div class="tag tag--chair" data-tooltip=".tooltip--chair" tabindex="0" role="button" aria-expanded="false">
+                    <svg class="tag--icon">
+                        <use xlink:href="#tag" />
+                    </svg>
+                    <div class="tag--tooltip tooltip--chair" aria-hidden="true">
+                        <h3>Jason Wu Chair</h3>
+                        <p>Performance Velvet Rust</p>
+                        <a href="#" class="button--small">Shop <span class="sr-only">Jason Wu Chair</span> now</a>
+                        <hr />
+                        <a class="all--link" href="#">
+                            Shop all chairs
+                            <svg class="arrow--icon">
+                                <use xlink:href="#arrow" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tag tag--table" data-tooltip=".tooltip--table" tabindex="0" role="button" aria-expanded="false">
+                    <svg class="tag--icon">
+                        <use xlink:href="#tag" />
+                    </svg>
+                    <div class="tag--tooltip tooltip--table" aria-hidden="true">
+                        <h3>Brooks Coffee Table</h3>
+                        <p>White wash oak</p>
+                        <a href="#" class="button--small">Shop <span class="sr-only">Brooks Coffee Table</span> now</a>
+                        <hr />
+                        <a class="all--link" href="#">
+                            Shop all tables
+                            <svg class="arrow--icon">
+                                <use xlink:href="#arrow" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="tag tag--rug" data-tooltip=".tooltip--rug" tabindex="0" role="button" aria-expanded="false">
+                    <svg class="tag--icon">
+                        <use xlink:href="#tag" />
+                    </svg>
+                    <div class="tag--tooltip tooltip--rug" aria-hidden="true">
+                        <h3>Payton</h3>
+                        <p>Hand knotted rug</p>
+                        <a href="#" class="button--small">Shop <span class="sr-only">Payton</span> now</a>
+                        <hr />
+                        <a class="all--link" href="#">
+                            Shop all rugs
+                            <svg class="arrow--icon">
+                                <use xlink:href="#arrow" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="tag tag--sectional" data-tooltip=".tooltip--sectional" tabindex="0" role="button" aria-expanded="false">
+                    <svg class="tag--icon">
+                        <use xlink:href="#tag" />
+                    </svg>
+                    <div class="tag--tooltip tooltip--sectional" aria-hidden="true">
+                        <h3>Sloan Sectional</h3>
+                        <p>Vintage Plush Pewter</p>
+                        <a href="#" class="button--small">Shop <span class="sr-only">Sloan Sectional</span> now</a>
+                        <hr />
+                        <a class="all--link" href="#">
+                            Shop all sectionals
+                            <svg class="arrow--icon">
+                                <use xlink:href="#arrow" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="tag tag--side" data-tooltip=".tooltip--side" tabindex="0" role="button" aria-expanded="false">
+                    <svg class="tag--icon">
+                        <use xlink:href="#tag" />
+                    </svg>
+                    <div class="tag--tooltip tooltip--side" aria-hidden="true">
+                        <h3>Reese Side Table</h3>
+                        <p>Painted Black</p>
+                        <a href="#" class="button--small">Shop <span class="sr-only">Reese Side Table</span> now</a>
+                        <hr />
+                        <a class="all--link" href="#">
+                            Shop all tables
+                            <svg class="arrow--icon">
+                                <use xlink:href="#arrow" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="drag--tooltip">
+            <svg class="arrow--icon left">
+                <use xlink:href="#arrow" />
+            </svg>
+            Drag to explore
+            <svg class="arrow--icon right">
+                <use xlink:href="#arrow" />
+            </svg>
+        </span>
+    </div>
+</div>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="js/focus-visible.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
